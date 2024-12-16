@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume builder</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+
+</head>
+<body>
+    <h1> Milestone 3 Dynamic Resume Builder </h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br/>
+
+            <label for="name">Email: </label>
+            <input type="email" id="email" name="email" required><br/>
+
+            <label for="name">Phone: </label>
+            <input type="phone" id="phone" name="phone" required><br/>
+        </fieldset>
+        <!-- education -->
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <label for="for">Education</label>
+            <textarea id="education" name="education" rows="3" required></textarea><br/>
+
+        </fieldset>
+<!-- experience -->
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+            <label for="for">Experience</label>
+            <textarea id="experience" name="experience" rows="3" required></textarea><br/>
+
+        </fieldset>
+<!-- 
+skills -->
+        <fieldset>
+            <legend>SKILLS</legend>
+            <label for="for">Skills</label>
+            <textarea id="skills" name="skills" rows="3" required></textarea><br/>
+
+        </fieldset>
+        <button type="submit">Generate resume below</button>
+    </form>
+    
+<div id="resumeoutput">
+<script src="main.js"></script>
+</div>
+
+</body>
+</html>
